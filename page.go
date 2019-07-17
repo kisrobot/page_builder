@@ -6,11 +6,11 @@ import (
 	"errors"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/slug"
-	"github.com/qor/widget"
+	"github.com/kisrobot/admin"
+	"github.com/kisrobot/qor"
+	"github.com/kisrobot/qor/resource"
+	"github.com/kisrobot/slug"
+	"github.com/kisrobot/widget"
 )
 
 type Page struct {
@@ -120,6 +120,6 @@ func New(config *Config) *admin.Resource {
 			RemoteDataResource: config.Containers.WidgetSettingResource,
 		}})
 
-	admin.RegisterViewPath("github.com/qor/page_builder/views")
+	admin.RegisterViewPath("github.com/kisrobot/page_builder/views")
 	return resource
 }
